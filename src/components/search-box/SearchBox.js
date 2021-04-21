@@ -1,11 +1,13 @@
 import React from 'react'
+import './search-box.css'
 
-const SearchBox = () => {
-  return (
-    <div>
-      <h1>Search Box</h1>
-    </div>
-  )
-}
+const SearchBox = ({ placeholder, handleChange }) => (
+  <input
+    className='search'
+    type='search'
+    placeholder={placeholder}
+    onChange={handleChange}
+  />
+)
 
 export default SearchBox
